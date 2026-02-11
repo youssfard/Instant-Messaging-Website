@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.page {
+    background: linear-gradient(180deg, #1C1F26, #181C27);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.search_friends {
+    background-color: #2A2E36;
+    border-radius: 9px;
+    padding: 8px 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+
+.results {
+    width: 100%;
+    max-width: 420px;
+    height: 60vh;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    padding: 20px;
+    background-color: #14171C;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.friend_item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 7px;
+    gap: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.friend_avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.friend_text {
+    display: flex;
+    flex-direction: column;
+    color: #EDEDED;
+    overflow: hidden;
+}
+
+.friend_name {
+    font-weight: 600;
+    font-size: 15px;
+    color: #EDEDED;
+}
+
+.friend_username {
+    font-size: 14px;
+    color: #B0B0B0;
+    margin-top: 2px;
+}
+
+.add_friend_btn {
+    margin-left: auto;
+    font-weight: 600;
+    color: white;
+    background-color: #5C6FEA;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}

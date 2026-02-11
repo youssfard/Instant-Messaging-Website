@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.error {
+    color: #DC2626;
+    font-size: 14px;
+    margin: 0;
+}
+
+.profile_txt {
+    margin: 0 0 20px 0;
+    color: white;
+    opacity: 0.4;
+}
+
+.page {
+    background: linear-gradient(180deg, #1C1F26, #181C27);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    border-radius: 9px;
+    padding: 20px;
+    background-color: #14171C;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form img {
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.form input {
+    width: 100%;
+    background-color: #2A2E36;
+    border-radius: 9px;
+    padding: 12px 14px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.avatar {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.button_container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button_container button {
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.button_container .save_btn {
+    background-color: #5C6FEA;
+}
+
+.button_container .logout_btn {
+    background-color: #E5484D;
+}
+
+.button_container button:nth-child(1) {
+    background-color: #E5484D;
+}
+.button_container button:nth-child(2) {
+    background-color: #5C6FEA;
+}
+

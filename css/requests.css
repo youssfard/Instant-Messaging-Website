@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.page {
+    background: linear-gradient(180deg, #1C1F26, #181C27);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.results {
+    width: 100%;
+    max-width: 520px;
+    height: 60vh;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    padding: 20px;
+    background-color: #14171C;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.request_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 7px;
+    gap: 10px;
+}
+
+.request_content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.request_text {
+    display: flex;
+    flex-direction: column;
+    color: #EDEDED;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.request_text .name,
+.request_text .username {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.request_buttons {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.accept_btn,
+.reject_btn {
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.accept_btn {
+    background-color: #5C6FEA;
+}
+
+.reject_btn {
+    background-color: #2A2E36;
+}
+
+.no_requests {
+    margin: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+.requests_txt {
+    margin: 0;
+    color: white;
+    opacity: 0.4;
+}

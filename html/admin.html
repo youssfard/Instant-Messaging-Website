@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Users</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="button_container">
+            <button class="add" id="add">Add user</button>
+            <button class="logout" id="logout">Logout</button>
+        </div>
+
+        <input type="text" id="search_bar" class="search-bar" placeholder="Search users...">
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>USERNAME</th>
+                        <th>NAME</th>
+                        <th>EMAIL</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody id="users"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-box">
+            <h3>Edit user</h3>
+
+            <input id="edit_id" type="hidden">
+
+            <label>Username</label>
+            <input id="edit_username">
+
+            <label>Name</label>
+            <input id="edit_name">
+
+            <label>Email</label>
+            <input id="edit_email">
+
+            <div class="modal-actions">
+                <button class="cancel" id="editCancel">Cancel</button>
+                <button class="editSave" id="editSave">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="addModal" class="modal">
+        <div class="modal-box">
+            <h3>Add user</h3>
+
+            <label>Username</label>
+            <input id="add_username">
+
+            <label>Name</label>
+            <input id="add_name">
+
+            <label>Email</label>
+            <input id="add_email">
+
+            <label>Password</label>
+            <input type="password" id="add_password">
+
+            <div class="modal-actions">
+                <button class="cancel" id="addCancel">Cancel</button>
+                <button class="editSave" id="addSave">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../javascript/admin.js"></script>
+
+</body>
+</html>
