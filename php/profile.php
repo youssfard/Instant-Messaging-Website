@@ -1,20 +1,20 @@
 <?php 
 
-session_start();
+	session_start();
 
-$id = $_SESSION['id'];
-require 'database.php';
-$con = database::get();
+	$id = $_SESSION['id'];
+	require 'database.php';
+	$con = database::get();
 
 
-$sql = "SELECT name,image FROM users
-		WHERE id='$id'";
+	$sql = "SELECT name,image FROM users
+			WHERE id='$id'";
 
-$result = mysqli_query($con,$sql);
-$row = mysqli_fetch_assoc($result);
+	$result = mysqli_query($con,$sql);
+	$row = mysqli_fetch_assoc($result);
 
-$name = $row['name'];
-$image = $row['image'];
+	$name = $row['name'];
+	$image = $row['image'];
 
 ?>
 

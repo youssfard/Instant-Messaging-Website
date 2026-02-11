@@ -1,18 +1,18 @@
 <?php 
 
-require 'database.php';
-$con = database::get();
+	require 'database.php';
+	$con = database::get();
 
-$name = $_POST["name"];
-$username = $_POST["username"];
-$email = $_POST["email"];
-$id = $_POST["id"];
+	$name = $_POST["name"];
+	$username = $_POST["username"];
+	$email = $_POST["email"];
+	$id = $_POST["id"];
 
-$sql = "UPDATE users 
-		SET name='$name', username='$username', email='$email'
-		WHERE id='$id'";
+	$sql = "UPDATE users 
+			SET name='$name', username='$username', email='$email'
+			WHERE id='$id'";
 
-mysqli_query($con, $sql);
+	mysqli_query($con, $sql);
 
-exit;
+	exit;
 ?>
